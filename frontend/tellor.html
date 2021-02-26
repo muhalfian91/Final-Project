@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+  <link rel="stylesheet" href="tellor.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Pacifico&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&display=swap" rel="stylesheet">
+  <title>TELLOR</title>
+</head>
+
+
+<body>
+
+  <header>
+    <nav>
+      <div id="logo">
+
+        <img  src="../asset/egg3.png" onmouseover=this.src="../asset/egg4.png" onmouseout=this.src="../asset/egg3.png">
+
+
+        <h1 class="title">Tellor</h1>
+        <img src="https://i.stack.imgur.com/PzC1L.gif">
+      </div>
+
+      <h1 class="title" id="titleProject" onClick="changeTitle()">Judul Project</h1>
+
+      <ul>
+        <a class="navlink" href="./profile.html">
+          <li>About<i class="fas fa-egg"></i></li>
+        </a>
+      </ul>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <div id="group1" class="postGroup">
+      <div class="postGroupHeader">
+        <img src="../asset/egg1.png">
+        <p id="group1Name" class="groupName">Egg-Phase</p>
+
+        <button class="addNewPostButton">+</button>
+      </div>
+
+      <div class=postsContainer></div>
+
+    </div>
+
+
+    <div id="group2" class="postGroup">
+
+      <div class="postGroupHeader">
+        <img src="../asset/egg2.png">
+        <p id="group2Name" class="groupName">Cracked-Phase</p>
+        <button class="addNewPostButton">+</button>
+      </div>
+
+      <div class=postsContainer></div>
+
+    </div>
+
+    <div id="group3" class="postGroup">
+
+      <div class="postGroupHeader">
+        <img src="../asset/egg3.png">
+        <p id="group3Name" class="groupName">Hatched-Phase</p>
+        <button class="addNewPostButton">+</button>
+      </div>
+
+      <div class=postsContainer></div>
+
+    </div>
+
+    <div id="group4" class="postGroup">
+      <div class="postGroupHeader">
+        <img src="../asset/egg4.png">
+        <p id="group4Name" class="groupName">Chick-Phase</p>
+        <button class="addNewPostButton">+</button>
+      </div>
+      <div class=postsContainer> </div>
+    </div>
+
+
+    <div id="modal" class="hide"></div>
+    <div id="promptAddPost" class="hide">
+
+      <p>Tambah post ke [group1]:</p>
+      <form>
+
+        <div class="inputCategory">
+          <label for="postContent">Konten:</label>
+          <input id="postContent" type="text">
+        </div>
+
+        <div class="inputCategory">
+          <label for="postDeadline">Deadline:</label>
+          <input id="postDeadline" type="date">
+        </div>
+
+        <div class="inputButton">
+          <input id="postNewPostButton" type="submit" value="Tambahkan">
+          <button id="cancelButton">Batal</button>
+        </div>
+
+      </form>
+    </div>
+
+
+  </main>
+
+  <script src="../backend/tellor.js"></script>
+
+</body>
+
+
+</html>
